@@ -1,0 +1,30 @@
+ #a {
+ color:#fcf6f5;
+ background:#a13941;
+ font-size: 46px;
+ text-align: center;
+ }
+ #center {
+ width:50%;
+ margin:0 auto;
+ }
+ #w {
+ border:solid red 3px;
+ }
+ #s {
+ color: #a13941;
+ font-style:italic;
+ }
+body{
+ font-size:26px;
+ background:#f9f5eb;
+ }
+ #e {
+ background:#f16529;
+ color:black;
+ border-radius: 10px;
+ }
+ #o {
+ background:#2170bb;
+ color:black;
+ }
