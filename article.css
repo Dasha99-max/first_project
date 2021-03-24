@@ -1,6 +1,6 @@
  #a {
- color:#fcf6f5;
- background:#a13941;
+ color:#a13941;
+ background:#f9f5eb;
  font-size: 46px;
  text-align: center;
  }
@@ -10,6 +10,7 @@
  }
  #w {
  border:solid red 3px;
+ background:#fcf6f5;
  }
  #s {
  color: #a13941;
@@ -27,4 +28,32 @@ body{
  #o {
  background:#2170bb;
  color:black;
+ }
+#aa{
+	color:#a13941;
+    text-align:center;
+}
+ #s {
+	 text-align:center;
+ }
+ #p{
+	 color:#a13941;
+	 font-weight: bold;
+	 
+ }
+ #r{
+	 color:#a13941;
+ }
+ #d{
+	font-size:italic;
+ }
+ #yes{
+	 color:red;
+	 display: inline-block;
+ }
+ #h {
+	color:red; 
+	display: inline;
+	margin: 0 0 15px;
+	
  }
