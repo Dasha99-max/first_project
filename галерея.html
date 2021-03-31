@@ -12,8 +12,7 @@
  <div id="s"> <button id="e">#html</button>
 <button id="o">#css</button>
 <button id="i">#css советы</button>
-<button id="y">#html советы</button> </div>
-15 августа 2018 г.
+<button id="i">#html советы</button> </div>
  <p>Вообще, эта статья является неким руководством по написанию<br> грамотного HTML и CSS. 
  Но явно не полноценным руководством<br> сводом правил или БЭМ, который, кстати, является очень спорным<br> моментом в мире фронт-энда. 
  Но об этом потом. </p>
@@ -23,103 +22,110 @@
 <div id="w">
 <p > Перевод статьи <br>
 
- <div id="s">Standards for developing flexible, durable, and sustainable HTML and CSS. </div> </p>
+ <a id="s" href="#">Standards for developing flexible, durable, and sustainable HTML and CSS. </a> </p>
 </div> 
-<div id="aa" ><h2>HTML </h2>
-<h2>Синтаксис</h2> </div>
+<div id="aa" ><h2 id="us">HTML </h2>
+<h2 id="us">Синтаксис</h2> </div>
 <p>Используйте двойные пробелы — это единственный способ, который будет гарантировать то, что ваш код покажется и отрендерится одинаковым образом в любой среде разработки. </p>
 
-<p>Вложенные элементы должны иметь только одинарный отступ, <div id="p">то есть двойным пробелом.</p> </div>
+<p>Вложенные элементы должны иметь только одинарный отступ, <div id="j">то есть двойным пробелом.</p> </div>
 
 <p>На атрибутах всегда используйте двойные кавычки, а не одинарные. </p>
 
 <p>Не включайте закрывающий слеш в самозкрывающиеся элементы — HTML5 <div id="r">спецификация указывает на то, что они вообще опциональны, но мы то знаем.</p> </div>
 
- <p>Ни в коем случае не пропускайте закрывающие теги (такие как </li> или </body>). </p>
+ <p>Ни в коем случае не пропускайте закрывающие теги (такие как <div id="you">&lt;/li&gt;</div> или <div id="we">&lt;/body&gt;</div>). </p>
 
-<div id="q"> <pre> <!DOCTYPE html> </pre>
- <html> 
-<head>
-    <title>Заголовок страницы</title>
-  </head>
- <body>
-    <img src= "images/company-logo.png" alt="Company">
-    <h1 class="hello-world">Привет, братиш!</h1>
-  </body>
- </html> </pre style>
+<div id="they"> <br> &lt;!DOCTYPE html&gt;
+<br> &lt; <span id="span1">html </span>&gt; 
+<br>&lt;<span id="span1">head</span>&gt;
+   <br>  &lt;<span id="span1">title&gt;</span>Заголовок страницы&lt;<span id="span1">/title</span>&gt;
+ <br>   &lt;<span id="span1">/head</span>&gt;
+<br>   &lt;<span id="span1">body</span>&gt;
+    <br>&lt;<span id="span1">img</span><span id="span2">  src</span>= "<span id="span3">images/company-logo.png"</span><span id="span2"> alt</span>="<span id="span3">Company</span>"&gt;
+   <br> &lt;<span id="span1">h1</span><span id="span2"> class</span>="<span id="span3">hello-world</span>"&gt;Привет, братиш!&lt;<span id="span1">/h1</span>&gt;
+ <br> &lt;<span id="span1">/body</span>&gt;
+ <br>&lt;<span id="span1">/html</span>&gt; </div>
 <h3 id="a">HTML5 doctype </h3>
 <p>Чтобы работать в режиме стандартов и последовательного рендеринга элементов в каждом доступном браузере — добавляйте этот простой доктайп в начале каждой HTML страницы.
  Вообще, всегда старайтесь помнить про стандарты.  </p>
 
- <code class="language-html">&lt;!DOCTYPE html&gt
-<html>
-  <head>
-  </head>
-</html>
- <div id="a" >Атрибуты языка </div> </code>
+ <div id="they">&lt;!DOCTYPE html&gt;<br>
+&lt;<span id="span1">html</span>&gt; <br>
+  &lt;<span id="span1">head</span>&gt;<br>
+  &lt;<span id="span1">/head</span>&gt;<br>
+&lt;<span id="span1">/html</span>&gt; </div>
+ <h2 id="us">Атрибуты языка </h2> </code>
 Вырезка из спецификации HTML5: <br>
 
- <br id="d">Разработчикам рекомендуется указывать атрибут языка в начале html файла, тем самым указывая на принадлежность языка документа. Это способствует  <div id="yes"> инструментам генерации голоса </div> определить то, какое произношение использовать, а инструментам перевода определить каким правилам придерживаться и так далее.
+ <p id="p">Разработчикам рекомендуется указывать атрибут языка в начале html файла, тем самым указывая на принадлежность языка документа. Это способствует  <div id="yes"> 
+ инструментам генерации голоса </div> <p id="p"> определить то, какое произношение использовать, а инструментам перевода определить каким правилам придерживаться и так далее.
+ </p>
 
-<div id="h">Вообще, прочитайте побольше об атрибуте lang в этой спецификации.</div> 
+<a id="h" href="#">Вообще, прочитайте побольше об атрибуте lang в этой спецификации.</a> 
 
- <p>А вот, ссылка на <p id="h">Sitepoint со списком языковых кодов </p> </p>
+ <p>А вот, ссылка на <a href="#" id="h">Sitepoint со списком языковых кодов </a> </p>
 
-<html lang="ru">
-  <!-- ... -->
-</html>
-<div id="aa" >Режим совместимости IE</div>
-Internet Explorer поддерживает тег использования совместимости <meta>, чтобы указывать то, под какую версию IE должна быть отрендерена страница. Да, пока что обстоятельства этого требуют и самый подходящий способ — это указать IE использовать последний поддерживаемый мод с edge mode.
+<div id="they"> &lt <span id="span1"> html</span><span id="span2"> lang</span>="<span id="span3">ru</span>"&gt; <br>
+  &lt;!-- ... --&gt; <br>
+&lt;<span id="span1">/html</span>&gt; </div>
+<h2 id="us">Режим совместимости IE </h2>
+Internet Explorer поддерживает тег использования совместимости <div id="you">&lt;meta&gt;</div>, чтобы указывать то, под какую версию IE должна быть отрендерена страница. 
+Да, пока что обстоятельства этого требуют и самый подходящий способ — это указать IE использовать последний поддерживаемый мод с <p id="she"> edge mode.</p>
 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<div id="aa">Кодировки </div>
-Легко и быстро делайте правильный рендеринг вашего контента, указывая точную кодировку вашим страницам. Так вы можете избежать использования мнемоников в HTML ( Это &nbsp; и т.п. В общем, дальше вы поняли), указывая их точную кодировку документу. В основном, самая ходовая кодировка это UTF-8.
+<div id="they">&lt;<span id="span1">meta</span><span id="span3"> http-equiv="X-UA-Compatible"</span> <span id="span2">content</span>="<span id="span3">IE=Edge</span>"&gt;</div>
+<h2 id="us">Кодировки </h2>
+Легко и быстро делайте правильный рендеринг вашего контента, указывая точную кодировку вашим страницам. Так вы можете избежать использования мнемоников в HTML (<xmp id="apple">Это &nbsp; и т.п.В общем, дальше вы поняли</xmp>), 
+указывая их точную кодировку документу. В основном, самая ходовая кодировка это <div id="you">UTF-8</div>.
 
-<head>
-  <meta charset="UTF-8">
-</head>
-<div id="aa">Указание пути к CSS и JavaScript</div>
-По спецификации HTML5, нет нужды в конкретном указании type при вставке CSS и JavaScript файлов, добавля как text/css так и text/javascript как страндартные указатели на типы подключаемых файлов. Теперь это лишнее.
+<div id="they">&lt;<span id="span1">head</span>&gt; <br>
+  &lt;<span id="span1">meta</span> <span id="span2">charset</span>="<span id="span3">UTF-8</span>"&gt; <br>
+&lt;<span id="span1">/head</span>&gt;</div>
+<h2 id="us">Указание пути к CSS и JavaScript</h2>
+По спецификации HTML5, нет нужды в конкретном указании type при вставке CSS и JavaScript файлов, добавля как <div id="you">text/css</div> так и <div id="you">text/javascript</div>
+ как страндартные указатели на типы подключаемых файлов. Теперь это лишнее.<p>
 
-Просто сделайте так:
+Просто сделайте так:</p>
 
-<!-- Внешний CSS -->
-<link rel="stylesheet" href="code-guide.css">
+<div id="they">&lt;!-- Внешний CSS --&gt; <br>
+&lt;<span id="span1">link</span> <span id="span2">rel</span>="<span id="span3">stylesheet</span>" <span id="span2">href</span>="<span id="span3">code-guide.css</span>"&gt;<br>
+<br>
+&lt;!-- Внутренний CSS --&gt;<br>
+&lt;<span id="span1">style</span>&gt;<br>
+  /* ... */ <br>
+&lt;<span id="span1">/style</span>&gt; <br>
+<br>
+&lt;!-- JavaScript --> <br>
+&lt;<span id="span1">script</span> <span id="span2">src</span>="<span id="span3">code-guide.js</span> &lt;<span id="span1">script</span>&gt; <br> </div>
+<h2 id="us">Практичность прежде всего </h2>
+Старайтесь поддерживать HTML стандарты и семантику, <p id="she">но не ценой практичности.</p>
+Используйте как можно меньше разметки с наименее возможным количеством запутанных моментов и спорных вложений.
 
-<!-- Внутренний CSS -->
-<style>
-  /* ... */
-</style>
-
-<!-- JavaScript -->
-<script src="code-guide.js"></script>
-<div id="aa" >Практичность прежде всего </div>
-Старайтесь поддерживать HTML стандарты и семантику, но не ценой практичности. Используйте как можно меньше разметки с наименее возможным количеством запутанных моментов и спорных вложений.
-
-<div id="aa" >Порядок атрибутов </div>
+<h2 id="us">Порядок атрибутов </h2>
 HTML атрибуты должны располагаться именно в таком порядке для облегчения чтения кода:
 
-class
-id, name
-data-*
-src, for, type, href, value
-title, alt
-role, aria-*
-Классы сделаны для удобного переиспользования компонентов, так что они идут первыми. ID это уже более специфичные вещи и относится к ним нужно довольно бережно, так что они идут вторыми.
+<p id="they">class<br>
+id, name<br>
+data-*<br>
+src, for, type, href, value<br>
+title, alt<br>
+role, aria-*<br> </p>
+Классы сделаны для удобного переиспользования компонентов, так что они идут первыми. <div id="you">ID</div> это уже более специфичные вещи и относится к ним нужно довольно бережно,
+ так что они идут вторыми.
 
-<a class="..." id="..." data-toggle="modal" href="#">
-  Example link
-</a>
+<div id="they"> &lt;;<span id="span1">a</span><span id="span2"> class</span>="..." <span id="span2">id</span>="..." <span id="span2">data-toggle</span>="<span id="span3">modal"</span> <span id="span2">href</span>="<span id="span3">#</span>"&gt;<br>
+  Example link<br>
+&lt;;<span id="span1">/a</span>&gt;<br>
+<br>
+&lt;;<span id="span1">input</span> <span id="span2">class</span>="<span id="span3">form-control</span>" <span id="span2">type</span>="<span id="span3">text</span>"&gt;<br>
+<br>
+&lt;;<span id="span1">img</span> <span id="span2">src</span>="..." <span id="span2">alt</span>="..."&gt;<br> </div>
+ <h2 id="us">Булиные атрибуты (Логические атрибуты) </h2>
+<p id="them">p.s. тут используется слово булиные для простоты упоминания в тексте, который и так не очень простой. В общем, как в простом сленге разработки.</p>
 
-<input class="form-control" type="text">
+<p>Это атрибуты, которые нуждаются в необъявленном значении.Да,<div id="you"> XHTML </div> требует, чтобы вы объявляли их значение, но в HTML5 нет такого требования.</p>
 
-<img src="..." alt="...">
- <div id="aa" >Булиные атрибуты (Логические атрибуты) </div>
-p.s. тут используется слово булиные для простоты упоминания в тексте, который и так не очень простой. В общем, как в простом сленге разработки.
-
-Это атрибуты, которые нуждаются в необъявленном значении. Да, XHTML требует, чтобы вы объявляли их значение, но в HTML5 нет такого требования.
-
-Для дальнейшего чтения, примите во внимание следующую WhatWG секцию по булиным атрибутам.
+<p>Для дальнейшего чтения, примите во внимание следующую <a href="#" id="h">WhatWG секциюпо булиным атрибутам.</a> </p>
 
 Присутствие булиных атрибутов на элементе указывает на значение true, а отсутствие атрибута указывает на значение false.
 
