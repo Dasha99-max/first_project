@@ -1,0 +1,503 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>  сайт </title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="article.css">
+</head>
+<body>
+<div id="center">
+ <h2 id="a">Стандарты написания гибкого, надежного и жизнеспособного HTML c CSS </h2>
+
+ <div id="s"> <button id="e">#html</button>
+<button id="o">#css</button>
+<button id="i">#css советы</button>
+<button id="i">#html советы</button> </div>
+ <p>Вообще, эта статья является неким руководством по написанию<br> грамотного HTML и CSS. 
+ Но явно не полноценным руководством<br> сводом правил или БЭМ, который, кстати, является очень спорным<br> моментом в мире фронт-энда. 
+ Но об этом потом. </p>
+
+ <p>То, что вы прочитаете, скорее является сводом правил хорошего тона 
+ при вёрстке, которые сведут на минимум проблемы с пониманием и рендерингом вашей работы. </p>
+<div id="w">
+<p > Перевод статьи <br>
+
+ <a id="s" href="#">Standards for developing flexible, durable, and sustainable HTML and CSS. </a> </p>
+</div> 
+<div id="aa" ><h2 id="us">HTML </h2>
+<h2 id="us">Синтаксис</h2> </div>
+<p>Используйте двойные пробелы — это единственный способ, который будет гарантировать то, что ваш код покажется и отрендерится одинаковым образом в любой среде разработки. </p>
+
+<p>Вложенные элементы должны иметь только одинарный отступ, <div id="j">то есть двойным пробелом.</p> </div>
+
+<p>На атрибутах всегда используйте двойные кавычки, а не одинарные. </p>
+
+<p>Не включайте закрывающий слеш в самозкрывающиеся элементы — HTML5 <div id="r">спецификация указывает на то, что они вообще опциональны, но мы то знаем.</p> </div>
+
+ <p>Ни в коем случае не пропускайте закрывающие теги (такие как <div id="you">&lt;/li&gt;</div> или <div id="we">&lt;/body&gt;</div>). </p>
+
+<div id="they"> <br> &lt;!DOCTYPE html&gt;
+<br> &lt; <span id="span1">html </span>&gt; 
+<br>&lt;<span id="span1">head</span>&gt;
+   <br>  &lt;<span id="span1">title&gt;</span>Заголовок страницы&lt;<span id="span1">/title</span>&gt;
+ <br>   &lt;<span id="span1">/head</span>&gt;
+<br>   &lt;<span id="span1">body</span>&gt;
+    <br>&lt;<span id="span1">img</span><span id="span2">  src</span>= "<span id="span3">images/company-logo.png"</span><span id="span2"> alt</span>="<span id="span3">Company</span>"&gt;
+   <br> &lt;<span id="span1">h1</span><span id="span2"> class</span>="<span id="span3">hello-world</span>"&gt;Привет, братиш!&lt;<span id="span1">/h1</span>&gt;
+ <br> &lt;<span id="span1">/body</span>&gt;
+ <br>&lt;<span id="span1">/html</span>&gt; </div>
+<h3 id="a">HTML5 doctype </h3>
+<p>Чтобы работать в режиме стандартов и последовательного рендеринга элементов в каждом доступном браузере — добавляйте этот простой доктайп в начале каждой HTML страницы.
+ Вообще, всегда старайтесь помнить про стандарты.  </p>
+
+ <div id="they">&lt;!DOCTYPE html&gt;<br>
+&lt;<span id="span1">html</span>&gt; <br>
+  &lt;<span id="span1">head</span>&gt;<br>
+  &lt;<span id="span1">/head</span>&gt;<br>
+&lt;<span id="span1">/html</span>&gt; </div>
+ <h2 id="us">Атрибуты языка </h2> </code>
+Вырезка из спецификации HTML5: <br>
+
+ <p id="p">Разработчикам рекомендуется указывать атрибут языка в начале html файла, тем самым указывая на принадлежность языка документа. Это способствует  <div id="yes"> 
+ инструментам генерации голоса </div> <p id="p"> определить то, какое произношение использовать, а инструментам перевода определить каким правилам придерживаться и так далее.
+ </p>
+
+<a id="h" href="#">Вообще, прочитайте побольше об атрибуте lang в этой спецификации.</a> 
+
+ <p>А вот, ссылка на <a href="#" id="h">Sitepoint со списком языковых кодов </a> </p>
+
+<div id="they"> &lt <span id="span1"> html</span><span id="span2"> lang</span>="<span id="span3">ru</span>"&gt; <br>
+  &lt;!-- ... --&gt; <br>
+&lt;<span id="span1">/html</span>&gt; </div>
+<h2 id="us">Режим совместимости IE </h2>
+Internet Explorer поддерживает тег использования совместимости <div id="you">&lt;meta&gt;</div>, чтобы указывать то, под какую версию IE должна быть отрендерена страница. 
+Да, пока что обстоятельства этого требуют и самый подходящий способ — это указать IE использовать последний поддерживаемый мод с <p id="she"> edge mode.</p>
+
+<div id="they">&lt;<span id="span1">meta</span><span id="span3"> http-equiv="X-UA-Compatible"</span> <span id="span2">content</span>="<span id="span3">IE=Edge</span>"&gt;</div>
+<h2 id="us">Кодировки </h2>
+Легко и быстро делайте правильный рендеринг вашего контента, указывая точную кодировку вашим страницам. Так вы можете избежать использования мнемоников в HTML (<xmp id="apple">Это &nbsp; и т.п.В общем, дальше вы поняли</xmp>), 
+указывая их точную кодировку документу. В основном, самая ходовая кодировка это <div id="you">UTF-8</div>.
+
+<div id="they">&lt;<span id="span1">head</span>&gt; <br>
+  &lt;<span id="span1">meta</span> <span id="span2">charset</span>="<span id="span3">UTF-8</span>"&gt; <br>
+&lt;<span id="span1">/head</span>&gt;</div>
+<h2 id="us">Указание пути к CSS и JavaScript</h2>
+По спецификации HTML5, нет нужды в конкретном указании type при вставке CSS и JavaScript файлов, добавля как <div id="you">text/css</div> так и <div id="you">text/javascript</div>
+ как страндартные указатели на типы подключаемых файлов. Теперь это лишнее.<p>
+
+Просто сделайте так:</p>
+
+<div id="they">&lt;!-- Внешний CSS --&gt; <br>
+&lt;<span id="span1">link</span> <span id="span2">rel</span>="<span id="span3">stylesheet</span>" <span id="span2">href</span>="<span id="span3">code-guide.css</span>"&gt;<br>
+<br>
+&lt;!-- Внутренний CSS --&gt;<br>
+&lt;<span id="span1">style</span>&gt;<br>
+  /* ... */ <br>
+&lt;<span id="span1">/style</span>&gt; <br>
+<br>
+&lt;!-- JavaScript --> <br>
+&lt;<span id="span1">script</span> <span id="span2">src</span>="<span id="span3">code-guide.js</span> &lt;<span id="span1">script</span>&gt; <br> </div>
+<h2 id="us">Практичность прежде всего </h2>
+Старайтесь поддерживать HTML стандарты и семантику, <p id="she">но не ценой практичности.</p>
+Используйте как можно меньше разметки с наименее возможным количеством запутанных моментов и спорных вложений.
+
+<h2 id="us">Порядок атрибутов </h2>
+HTML атрибуты должны располагаться именно в таком порядке для облегчения чтения кода:
+
+<p id="they">class<br>
+id, name<br>
+data-*<br>
+src, for, type, href, value<br>
+title, alt<br>
+role, aria-*<br> </p>
+Классы сделаны для удобного переиспользования компонентов, так что они идут первыми. <div id="you">ID</div> это уже более специфичные вещи и относится к ним нужно довольно бережно,
+ так что они идут вторыми.
+
+<div id="they"> &lt;;<span id="span1">a</span><span id="span2"> class</span>="..." <span id="span2">id</span>="..." <span id="span2">data-toggle</span>="<span id="span3">modal"</span> <span id="span2">href</span>="<span id="span3">#</span>"&gt;<br>
+  Example link<br>
+&lt;;<span id="span1">/a</span>&gt;<br>
+<br>
+&lt;;<span id="span1">input</span> <span id="span2">class</span>="<span id="span3">form-control</span>" <span id="span2">type</span>="<span id="span3">text</span>"&gt;<br>
+<br>
+&lt;;<span id="span1">img</span> <span id="span2">src</span>="..." <span id="span2">alt</span>="..."&gt;<br> </div>
+ <h2 id="us">Булиные атрибуты (Логические атрибуты) </h2>
+<p id="them">p.s. тут используется слово булиные для простоты упоминания в тексте, который и так не очень простой. В общем, как в простом сленге разработки.</p>
+
+<p>Это атрибуты, которые нуждаются в необъявленном значении.Да,<div id="you"> XHTML </div> требует, чтобы вы объявляли их значение, но в HTML5 нет такого требования.</p>
+
+<p>Для дальнейшего чтения, примите во внимание следующую <a href="#" id="h">WhatWG секциюпо булиным атрибутам.</a> </p>
+
+<blockquote> <p>Присутствие булиных атрибутов на элементе указывает на значение <div id="you">true</div>, а отсутствие атрибута указывает на значение <div id="you">false</div>.</p> </blockquote>
+
+Если вам <span id="it">необходимо</span> присутствие атрибута, НО наличие его значения вам ненужно, то следуйте этому наставлению WhatWG:
+
+<p id="it">Если атрибут есть, его значение должно быть либо пустой строкой, либо каноничным именем атрибута, без заглавного или замыкающего пробела.</p>
+
+<div id="they">
+&lt;<span id="span1">input</span> <span id="span2">type</span>="<span id="span3">text</span>"<span id="span2"> disabled</span>&gt;<br>
+<br>
+
+&lt;<span id="span1">input</span> <span id="span2">type</span>="<span id="span3">checkbox</span>"<span id="span2"> value</span>="<span id="span3">1</span>"<span id="span2"> checked</span>&gt; <br>
+<br>
+&lt;<span id="span1">select</span>&gt; <br>
+  &lt;<span id="span1">option </span><span id="span2">value</span>="1" <span id="span2">selected>1&lt;<span id="span1">/option</span>&gt; <br>
+&lt;/<span id="span1">select</span>&gt; </div> <br>
+ <h2 id="us">Сокращение разметки </h2>
+ 
+<p>Где только возможно, избегайте излишних родительских элементов при написании HTML. Во многих случаях это приводит к повторениям и рефакторингу,
+ но в итоге вы получаете меньше HTML. Вот хороший пример: </p>
+<div id="they">
+&lt;!-- Отстой --&gt; <br>
+&lt;<span id="span1">span</span><span id="span2"> class</span>="<span id="span3">avatar</span>"&gt;<br>
+  &lt;<span id="span1">img</span><span id="span2"> src</span>="..."&gt;<br>
+&lt;<span id="span1">/span</span>&gt;<br>
+<br>
+&lt;!-- Уже получше --&gt;<br>
+&lt;<span id="span1">img</span><span id="span2"> class</span>="<span id="span3">avatar</span>" <span id="span2">src</span>="..."&gt; </div>
+<h2 id="us">Разметка созданная в JavaScript</h2>
+Создание разметки в JavaScript файле усложняет поиск контента, усложняет его редактирование и уменьшает скорость его рендеринга. <p id="j">Избегайте такого подхода
+ всегда, когда это только возможно.</p>
+
+<h1 id="us">CSS </h1>
+<h2 id="us">Синтаксис </h2>
+<p>Используйте двойные пробелы, это единственный способ гарантировать то, что ваш код везде одинаково отрендерится и будет легко прочитан.</p>
+
+<p>Группируя селекторы, дайте каждому по строке.</p>
+
+<p>Включайте один пробел перед открывающей скобкой блока, чтобы было понятнее.</p>
+
+<p>Ставьте закрывающие скобки на новой строке.</p>
+
+<p>Делайте один пробел после каждого <div id="you">:</div></p>
+
+<p>Каждое объявление должно появляться на своей собственной строке для получения точного отчета об ошибках. В общем, чтобы видеть на какой строке был сбой.</p>
+
+<p>Заканчивайте каждое объявление точкой с запятой. В последнем объявлении это опционально,
+но в таком случае ваш код будет более склонен выдать ошибку в самых странных моментах при рендеринге.</p>
+
+<p>Свойства, разделенные запятой, должны включать в себя пробел после каждой запятой. Например как в случае с <div id="you">box-shadow</div>.</p>
+
+<p>Не ставьте пробелы после запятых в значениях <div id="you">rgb()</div>, <div id="you">rgba()</div>, <div id="you">hsl()</div>,<div id="you"> hsla()</div>
+, or <div id="you">rect()</div>.
+ Это поможет различать разные значения цвета(запятая, без пробела) от разных значений свойств (запятая с пробелом).</p>
+
+<p>Не добавляйте ноль к свойствам значений или цветовым параметрам, то есть <div id="you">.5</div> вместо<div id="you"> 0.5</div> и <div id="you">-.5px</div> 
+вместо <div id="you">-0.5px</div>.</p>
+
+<p>Все хекс значения пишите в нижнем регистре, то есть<div id="you">#fff</div>. Буквы в нижнем регистре легче отличить, когда читаешь документ,
+ так как у них больше уникальных очертаний.</p>
+
+<p>Используйте сокращенные хекс значения, где это только возможно. Например,<div id="you"> #fff</div> вместо<div id="you"> #ffffff</div>.</p>
+
+<p>Заключайте в скобки значения атрибутов в селекторах. Например,<div id="you"> input[type=”text”]</div>. Хоть это и опционально, но это хорошая практика в плане логичности.</p>
+
+<p>Избегайте указывания единиц измерения для нулевых значений. Например,<div id="you"> margin: 0</div>, вместо<div id="you"> margin: 0px</div>.</p>
+
+<div id="they">/* Плохой CSS */ <br>
+<span id="span2">.selector</span>, <span id="span2">.selector-secondary</span>, <span id="span2">.selector</span>[<span id="span2">type=</span><span id="span3">text</span>] {<br>
+ <span id="span1"> padding</span>:<span id="span1">15</span>px;<br>
+ <span id="span1"> margin</span>:<span id="span1">0</span>px <span id="span1">0</span>px <span id="span1">15</span>px;<br>
+  <span id="span1">background-color</span>:rgba(<span id="span1">0</span>,<span id="span1"> 0</span>, <span id="span1">0</span>, <span id="span1">0.5</span>);<br>
+  <span id="span1">box-shadow</span>:<span id="span1">0</span>px<span id="span1">1</span>px <span id="span1">2</span>px #CCC,inset <span id="span1">0</span>
+  <span id="span1">1</span>px <span id="span1">0</span> #FFFFFF<br>
+}<br>
+<br>
+/* Хороший CSS */<br>
+<span id="span2">.selector</span>,<br>
+<span id="span2">.selector-secondary</span>,<br>
+<span id="span2">.selector</span>[<span id="span2">type=</span>"<span id="span3">text</span>"] {<br>
+ <span id="span1"> padding</span>: <span id="span1">15</span>px;<br>
+ <span id="span1"> margin-bottom</span>: <span id="span1">15</span>px;<br>
+  <span id="span1">background-color</span>:<span id="span4"> rgba</span>(<span id="span1">0</span>,<span id="span1">0</span>,<span id="span1">0</span>,.<span id="span1">5</span>);<br>
+ <span id="span1"> box-shadow</span>: <span id="span1">0</span> <span id="span1">1</span>px <span id="span1">2</span>px #ccc, inset <span id="span1">0</span> <span id="span1">1</span>px 
+ <span id="span1">0 </span>#fff;<br>
+} </div>
+<h1 id="us">Порядок объявления </h1>
+Следующие объявления, должны группироваться в таком порядке:<br>
+
+<p id="its">Позиционирование</p>
+
+<p id="its">Box model</p>
+
+<p id="its">Типография</p>
+
+<p id="its">Визуализация</p>
+
+<p>Главное — позиционирование идет первым, так как оно может удалить элемент с потока документа и переопределить относительные стили для box-модели,
+ которая идет следующей, так как указывает размещение и размеры элемента.</p>
+
+<p>Всё остальное, что внутри компонента или не влияет на предыдущие две секции, идет последним:</p>
+
+<div id="they">.<span id="span2">declaration-order</span> { <br>
+  /* Позиционирование */<br>
+  <span id="span1">position</span>: absolute;<br>
+  <span id="span1">top</span>: <span id="span1">0</span>;<br>
+  <span id="span1">right</span>: <span id="span1">0</span>;<br>
+  <span id="span1">bottom</span>: <span id="span1">0</span>;<br>
+  <span id="span1">left</span>: <span id="span1">0</span>;<br>
+  <span id="span1">z-index</span>: <span id="span1">100</span>;<br>
+<br>
+  /* Box-model */<br>
+  <span id="span1">display</span>: block;<br>
+  <span id="span1">float</span>: right;<br>
+  <span id="span1">width</span>: <span id="span1">100</span>px;<br>
+  <span id="span1">height</span>: <span id="span1">100</span>px;<br>
+<br>
+  /* Типография */<br>
+  <span id="span1">font</span>: normal 13px "<span id="span2">Helvetica Neue</span>", sans-serif;<br>
+  <span id="span1">line-height</span>: <span id="span1">1.5</span>;<br>
+  <span id="span1">color</span>: #333;<br>
+  <span id="span1">text-align</span>: center;<br>
+<br>
+  /* Визаулизация */<br>
+  <span id="span1">background-color</span>: #f5f5f5;<br>
+  <span id="span1">border</span>: <span id="span1">1</span>px solid #e5e5e5;<br>
+  <span id="span1">border-radius</span>:<span id="span1"> 3</span>px;<br>
+<br>
+  /* Всякое */<br>
+  <span id="span1">opacity</span>:<span id="span1"> 1</span>; <br>
+}<br></div>
+<h2 id="us">Не используйте @import </h2>
+<p>В сравнении с<div id="you"> &lt;link&gt; </div>, <div id="you">@import</div> медленнее, добавляет несколько дополнительных запросов странице и
+ может вызывать другие непредвиденные проблемы. Избегайте его применение и делайте уклон на другие решения: </p>
+
+Используйте несколько <div id="you">&lt;link&gt;</div> элементов
+
+<p>Компилируйте свой CSS с препроцессором, таким как Sass, в один файл.</p>
+
+<p>Сливайте вместе ваши CSS файлы с функционалом, предоставленным в Rails, Jekyll и других.</p>
+
+<div id="they"> 
+&lt;!-- Используйте link --&gt; <br>
+&lt;<span id="span1">link</span> <span id="span2">rel</span>="<span id="span3">stylesheet</span>" <span id="span2">href</span>="<span id="span3">core.css</span>"&gt;<br>
+<br>
+&lt;!-- Избегайте @imports --&gt;<br>
+&lt;<span id="span1">style</span>&gt;<br>
+  <span id="span3">@import url</span>("<span id="span2">more.css</span>");<br>
+&lt;<span id="span1">/style</span>&gt; </div>
+ <h2 id="us">Размещение медиа запросов </h2>
+ <p>Размещайте медиа запросы как можно ближе к своим релевантным наборам правил. Не связывайте их через разные таблицы стилей или под конец документа.
+ Делая так, вы только усложните работу с ними в будущем, не говоря уже о том треше, с которым придется столкнуться тому, кто потом будет работать с вашим кодом.
+ Вот обычная хорошая разметка с медиа-запросами:</p>
+<div id="they">
+<span id="span2">.element</span> { ... } <br>
+<span id="span2">.element-avatar </span>{ ... }<br>
+<span id="span2">.element-selected</span> { ... }<br>
+<br>
+<span id="span3">@media</span> (<span id="span1">min-width</span>:<span id="span1"> 480</span><span id="span3">px</span>) {<br>
+  <span id="span2">.element</span> { ...}<br>
+  <span id="span2">.element-avatar</span> { ... }<br>
+  <span id="span2">.element-selected</span> { ... }<br>
+} </div>
+<h2 id="us">Свойства с префиксом </h2>
+<p>Используя вендорные свойства префиксов, делайте отступ каждому свойству так, будто это объявление нового свойства, 
+то есть в линию, для того, чтобы облегчить мультистрочное редактирование.</p>
+
+<p>В Textmate, используйте Text → Edit Each Line in Selection (⌃⌘A). В Sublime Text 2, используйте Selection → Add Previous Line (⌃⇧↑) и Selection
+ → Add Next Line (⌃⇧↓).</p>
+
+<div id="they">/* Свойства с префиксами */ <br>
+<span id="span2">.selector</span> {<br>
+ <span id="span1"> -webkit-box-shadow</span>: <span id="span1">0</span><span id="span1"> 1</span>px <span id="span1">2</span>px <span id="span3">rgba</span>
+ (<span id="span1">0</span>,<span id="span1">0</span>,<span id="span1">0</span>,
+ .<span id="span1">15</span>);<br>
+          <span id="span1">box-shadow</span>: <span id="span1">0</span> <span id="span1">1</span>px <span id="span1">2</span>px <span id="span3">rgba</span>
+		  (<span id="span1">0</span>,<span id="span1">0</span>,<span id="span1">0</span>,
+		  .<span id="span1">15</span>);<br>
+} <br></div>
+<h2 id="us">Одиночные объявления стилей </h2>
+<p>В примерах, где набор правил включает только одно указание стиля, рассмотрите вариант с удалением переноса строк, 
+для улучшения читабельности и быстроты редактирования. Каждый набор правил с несколькими декларациями должен разделяться на разные строки.</p>
+
+Ключевой фактор тут, это обнаружение ошибок — то есть CSS валидатор подмечает то, что у вас есть синтаксическая ошибка на 183 строке. 
+С одиночной декларацией, вы её не пропустите. В множественном объявлении стилей, разные строки обязательны для сохранения здравого смысла.</p>
+
+<div id="they">/* Одиночное объявление стиля */ <br>
+<span id="span2">.span1</span> { <span id="span1">width</span>: <span id="span1">60</span>px; }<br>
+<span id="span2">.span2</span> { <span id="span1">width</span>: <span id="span1">140</span>px; }<br>
+<span id="span2">.span3 </span>{ <span id="span1">width</span>: <span id="span1">220</span>px; }<br>
+<br>
+/* Множественное объявление, по стилю на строку */<br>
+<span id="span2">.sprite </span>{<br>
+  <span id="span1">display</span>: inline-block;<br>
+  <span id="span1">width</span>: <span id="span1">16</span>px;<br>
+  <span id="span1">height</span>: <span id="span1">15</span>px;<br>
+  <span id="span1">background-image</span>:<span id="span3"> url</span>(<span id="span2">../img/sprite.png</span>);<br>
+}<br>
+<span id="span2">.icon </span>          { <span id="span1">background-position</span>:<span id="span1"> 0</span><span id="span1"> 0</span>; }<br>
+<span id="span2">.icon-home </span>     { <span id="span1">background-position</span>:<span id="span1"> 0</span> <span id="span1">-20</span>px; }<br>
+<span id="span2">.icon-account  </span> { <span id="span1">background-position</span>:<span id="span1"> 0</span><span id="span1"> -40</span>px; } <br></div>
+<h2 id="us">Условные сокращения </h2>
+<p>Ограничивайте себя в использовании условных сокращений, в тех примерах, где вам надо выставлять все доступные значения. 
+По обыкновению, злоупотребляют сокращениями следующих свойств:</p>
+
+<p id="its">padding </p>
+
+<p id="its">margin</p>
+
+<p id="its">font</p>
+
+<p id="its">background</p>
+
+<p id="its">border</p>
+
+<p id="its">border-radius</p>
+
+<p>Зачастую, нам просто не нужно выставлять все значения в условных сокращениях. Для примера, HTML заголовки выставляют только верхний и нижний margin,
+ так что когда необходимо, переписывайте только два этих значения. Чрезмерное использование сокращений зачастую ведет к медленному рендеренгу кода,
+ с ненужными перезаписями и непреднамеренными побочными эффектами. </p>
+<div id="they">
+/* Плохой пример */ <br>
+<span id="span2">.element</span>: <span id="span1">0</span> <span id="span1">0</span> <span id="span1">10</span>px;<br>
+  <span id="span1">background</span> {<br>
+ <span id="span1"> margin</span>: <span id="span1">0</span> <span id="span1">0</span> <span id="span1">10</span>px;<br>
+  <span id="span1">background</span>: red;<br>
+  <span id="span1">background</span>:<span id="span3"> url</span>("<span id="span2">image.jpg"</span>: <span id="span1">0</span> <span id="span1">0</span> <span id="span1">10</span>px;<br>
+  <span id="span1">background</span>);<br>
+ <span id="span1"> border-radius</span>: <span id="span1">3</span>px <span id="span1">3</span>px <span id="span1">0</span> <span id="span1">0</span>;<br>
+}<br>
+<br>
+/* Хороший пример */<br>
+<span id="span2">.element</span> {<br>
+ <span id="span1"> margin-bottom</span>: <span id="span1">10</span>px;<br>
+  <span id="span1">background-color</span>: red;<br>
+  <span id="span1">background-image</span>:<span id="span3"> url</span>("<span id="span2">image.jpg</span>");<br>
+  <span id="span1">border-top-left-radius</span>: <span id="span1">3</span>px;<br>
+ <span id="span1"> border-top-right-radius</span>: <span id="span1">3</span>px;<br>
+}<br>
+<br> </div>
+<h2 id="us">Вложения в Less и Sass  </h2>
+<p>Под страхом расстрела избегайте ненужных вложений в препроцессорах. Просто если вы можете это делать, то это не означает того, что вам всегда надо это делать. 
+Рассматривайте использование вложений только в тех случаях, если вам надо масштабировать стили по родителю и если есть несколько элементов для вложения.</p>
+<div id="they">
+<span id="span2">// Без вложения</span><br>
+<span id="span2">.table > thead > tr > th </span>{ … }<br>
+<span id="span2">.table > thead > tr > td</span> { … }<br>
+<br>
+<span id="span2">// С вложением</span><br>
+<span id="span2">.table > thead > tr</span> {<br>
+<span id="span2">  > th </span>{ … }<br>
+<span id="span2">  > td </span>{ … }<br>
+}<br> </div>
+<h2 id="us">Операторы в Less и Sass </h2>
+<p>Для улучшения читабельности, заключайте математические операции в скобки с пробелом между значениями, переменными и операторами.</p>
+<div id="they">
+<span id="span2">// Плохой пример</span><br>
+<span id="span2">.element</span> {<br>
+  <span id="span1">margin</span>: <span id="span1">10</span>px <span id="span1">0</span> <span id="span3">@variable</span>*<span id="span1">2</span> <span id="span1">10</span><span id="span3">px</span>;<br>
+}<br>
+<br>
+<span id="span2">// Хороший пример</span><br>
+<span id="span2">.element</span> {<br>
+ <span id="span1"> margin</span>: <span id="span1">10</span>px <span id="span1">0</span> (<span id="span3">@variable</span> * <span id="span1">2</span>) <span id="span1">10</span><span id="span3">px</span>;<br>
+}<br> </div>
+<h2 id="us">Комментарии </h2>
+<p>Помните, что код пишется и поддерживается людьми. Убедитесь, что ваш код достаточно описателен, хорошо прокомментирован и доступен для понимания другими.
+ Создавайте комменты в коде, передающие контекст и своё конкретное предназначение. А не просто повторяющие компонент или имя класса.</p>
+
+<p>Убеждайтесь в том, что вы пишите полные предложения для больших комментариев и сжатые фразы для заглавных записей.</p>
+<div id="they">
+/* Плохой пример */ <br>
+/* Modal header */<br>
+<span id="span2">.modal-header</span> {<br>
+  ...<br>
+}<br>
+<br>
+/* Good example */<br>
+/* Wrapping element for .modal-title and .modal-close */<br>
+<span id="span2">.modal-header </span>{<br>
+  ...<br>
+} <br>
+</div>
+<h2 id="us">Именование классов </h2>
+<p>Пишите классы в нижнем регистре и используйте тире, а не нижние подчеркивания или горбатый регистр. Тире служит как естественный пробел в связанных классах. 
+(<div id="you">.btn</div> и <div id="you">.btn-danger</div>). </p>
+
+<p>Избегайте чрезмерных или слишком коротких, спорных определений названий. <div id="you">.btn</div> очень полезно для кнопок, но <div id="you">.s</div> не означает ровным счетом ничего.</p>
+
+<p>Классы должны быть как можно короче и более сжатыми, на сколько это возможно.</p>
+
+<p>Используйте имена со смыслом, предпочитайте структурные или целесообразные имена, взамен презентативных.</p>
+
+<p>Добавляйте классам префикс, основываясь на их ближайшем родителе или основном классе.</p>
+
+<p>Используйте <div id="you">.js-*</div> классы для обозначения поведения, но держите эти классы подальше от вашего CSS.</p>
+
+<p>Также, очень полезно применять эти правила при раздаче имен переменным в Sass и Less.</p>
+<div id="they">
+/* Плохой пример */ <br>
+<span id="span2">.t</span> { ... }<br>
+<span id="span2">.red </span>{ ... }<br>
+<span id="span2">.header </span>{ ... }<br>
+<br>
+/* Хороший пример */<br>
+<span id="span2">.tweet</span> { ... }<br>
+<span id="span2">.important</span> { ... }<br>
+<span id="span2">.tweet-header</span> { ... }<br> </div>
+<h2 id="us">Селекторы </h2>
+<p><div id="our">Обязательно обратите внимание на эту статью</div> — <div id="their">Прокачиваем навыки работы с CSS селекторами</div></p>
+
+<p>Используйте классы вместо обычных тегов элементов для оптимального рендеринга.</p>
+
+<p>Избегайте исползования нескольких селекторов атрибутов, например <div id="you">[class^="…"]</div>, на часто встречающихся компонентах. 
+Известно, что производительность браузера страдает из-за этого.</p>
+
+<p>Сохраняйте селекторы краткими и ограничивайте количество элементов в каждом селекторе до трех.</p>
+
+<p>Масштабируйте классы до ближайшего родителя, только тогда, когда нужно. Когда не используются префиксные классы.</p>
+<div id="they">
+/* Плохой пример */<br>
+<span id="span2">span </span>{ ... }<br>
+<span id="span2">.page-container #stream .stream-item .tweet .tweet-header .username</span> { ... }<br>
+<span id="span2">.avatar { ... }</span><br>
+<br>
+/* Хороший пример */<br>
+<span id="span2">.avatar</span> { ... }<br>
+<span id="span2">.tweet-header .username </span>{ ... }<br>
+<span id="span2">.tweet .avatar</span> { ... } <br>
+<br></div>
+<h2 id="us">Организация кода </h2>
+<p>Организуйте секции кода по компонентам.</p>
+
+<p>Создавайте последовательную иерархию комментирования.</p>
+
+<p>Используйте последовательные пробелы при разделении секций кода, чтобы потом вам было легче читать большие документы.</p>
+
+<p>Используя несколько CSS файлов, разделяйте их по компонентам, а не по страницам. Страницы могут быть перераспределены, а компоненты смещены.</p>
+<div id="they">
+/*<br>
+ * Начало секции компонента<br>
+ */<br>
+<br>
+<span id="span2">.element</span> { ... }<br>
+<br>
+<br>
+/*<br>
+ * Начало секции компонента<br>
+ *<br>
+ * <div id="maze">Иногда вам надо добавлять дополнительный контекст для целого компонента. Делайте это как описано ниже, при необходимости.</div><br>
+ */<br>
+<br>
+<span id="span2">.element</span> { ... }<br>
+<br>
+/* Связанный саб-компонент или модификатор стиля */<br>
+<span id="span2">.element-heading </span>{ ... }<br>
+<br> </div>
+<h2 id="us">Предпочтения при редактировании </h2>
+<p>Выставите вашему редактору следующие настройки, чтобы избежать распространенные несоответствия в коде и странные различия:</p>
+
+<p>Используйте двойной пробел.</p>
+
+<p>Обрезайте <p="it">болтающиеся(лишние)</p> пробелы при сохранении.</p>
+<p>Выставляйте кодировку на <div id="you">UTF-8.</div></p>
+
+<p>Добавляйте новые строки с конца.</p>
+
+<p>Рассмотрите документирование и применение этих свойств в вашем проекте в <div id="you">.editorconfig</div> файле. Для примера, вот один для WhatWG секциюпо булиным атрибутам.</a> </p>
+<a href="#" id="h">Bootstrap</a>. Вот больше про<a href="#" id="h"> EditorConfig</a>.</p>
+
+<div id="runner">Стандарты написания гибкого, надежного и жизнеспособного HTML c CSS</div>
+<div id="runner">CSS свойство background-image как антипаттерн</div>
+</div>
+</body>
+</html>
