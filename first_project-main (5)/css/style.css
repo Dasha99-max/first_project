@@ -1,0 +1,53 @@
+h1 {
+color:violet;
+}
+h3 {
+color:black;
+text-decoration:underline;
+}
+#yellow1 {
+background:yellow;
+}
+body{
+
+
+background:green;
+}
+
+
+#red1 {
+color:red;
+}
+#background-color {
+color: blue;
+background-color:white;
+}
+#font-size{
+color: blue;
+font-size:20px;
+}
+#text-decoration {
+color:blue;
+font-size:14px;
+}
+#underline {
+color:red;
+text-decoration:underline;
+}
+#line-through {
+color:red;
+text-decoration:line-through;
+}
+#font-style {
+color:blue;
+font-style:italic;
+}
+#font-weight {
+color:blue;
+font-weight:bold;
+}
+
+#text-align {
+text-align:center;
+color: blue;
+}

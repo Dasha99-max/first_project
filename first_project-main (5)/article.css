@@ -1,0 +1,115 @@
+ #a {
+ color:#a13941;
+ background:#f9f5eb;
+ font-size: 46px;
+ text-align: center;
+ }
+ #center {
+ width:50%;
+ margin:0 auto;
+ }
+ #w {
+ border:solid red 3px;
+ background:#fcf6f5;
+ }
+ #s {
+ color: #a13941;
+ font-style:italic;
+ }
+body{
+ background:#f9f5eb;
+ font: 500 25px Rubik,sans-serif;
+ font-size: 20px;
+ }
+ #e {
+ background:#f16529;
+ color:black;
+ border-radius: 5px;
+ }
+ #o {
+ background:#2170bb;
+ color:white;
+ border-radius: 5px;
+ border-color: #2170bb;
+}
+ }
+#aa{
+	color:#a13941;
+    text-align:center;
+	text-align: center;
+	
+}
+ #s {
+	 text-align:center;
+ }
+ #j{
+	 color:#a13941;
+	 font-weight: bold;
+	  padding:0px;
+	  display:inline;
+ }
+ #r{
+	 color: #a13941;
+	 display:inline;
+ }
+ #p{
+	font-style:italic;
+	font-weight:bold;
+ }
+ #yes{
+	 color:red;
+	 display: inline;
+	 font-style:italic;
+ }
+ #h {
+	color:red; 
+	display: inline;
+	margin: 0 0 15px;
+	
+ }
+ #you{
+	 color:red;
+	 border:solid 2px pink;
+	 display:inline;
+	 background:wheat;
+	 box-sizing: border-box;
+ }
+ #we{
+	 color:red;
+	 border:solid 2px pink;
+	 display:inline-block;
+	 background:wheat;
+ }
+ #they{
+	 background:white;
+	 font: 500 18px Rubik, sans-serif;
+ }
+ #she{
+	 color:red;
+	 display:inline;
+ }
+ #apple{
+	 display:inline;
+	 font-style: italic;
+ }
+ #span1{
+	 color:#006ab5;
+ }
+ #span2{
+	 color:#008076;
+ }
+ #span3{
+	 color:#5f6e00;
+ }
+ #i{
+	 background:#f9f5eb;
+	 border-radius: 5px;
+	 border: 1px dotted #a13941;
+ }
+ #us{
+	 color:#a13941;
+	 text-align:center;
+ }
+ #them{
+	font-style:italic;
+ }
